@@ -19,14 +19,48 @@
 	              <li class="active"><a href="#">Home</a></li>
 	            </ul>
 	            <ul class="nav navbar-nav navbar-right">
-	              <li><button onclick="$('#mainContainer').load('createAccount.html #createAccount');">SignUp</button></li>
+	            	<li><a href="login.html">Login</a></li>
+	              	<li><a href="createAccount.html">SignUp</a></li>
 	            </ul>
 	          </div><!--/.nav-collapse -->
 	        </div><!--/.container-fluid -->
       	</nav>
       	<div class="container" id="mainContainer">
-      		
+      		<div id="addProduct">
+			  <div class="container">
+			    <div class="row">
+			          <form id="addProduct" role="form">
+			            <div class="form-group">
+			              	<h2>Add product</h2>
+			            </div>
+			            <div class="form-group">
+			              	<label class="control-label" for="productName">Product name</label>
+			              	<input name="productName" id="productName" type="text" minlength="5" maxlength="50" class="form-control">
+			            </div>
+			            <div class="form-group">
+			              	<label class="control-label" for="productPrice">Price</label>
+			              	<input name="price" id="productPrice" type="number" step="any" class="form-control">
+			            </div>
+			            <div class="form-group">
+			              	<label class="control-label" for="comment">Description</label>
+							<textarea name="description" class="form-control" rows="6"></textarea>
+				        </div>
+			            <div class="form-group">
+			            	<input type="button" onclick="addProduct()" class="btn-block btn btn-primary" value="Add product" />
+			            </div>
+			          </form>
+			    </div>
+				<div class="panel panel-default">
+				  <!-- Default panel contents -->
+				  <div class="panel-heading"><h4>Products</h4></div>
+				  <!-- List group -->
+				  <div class="list-group" id="products">
+				  </div>
+				</div>
+			  </div>
+			</div>
       	</div>
       	<script src="/bootstrap/js/bootstrap.min.js"></script>
+      	<script type="text/javascript" src="app.js"></script>
 	</body>
 </html>
