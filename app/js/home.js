@@ -2,8 +2,6 @@
 
 angular.module('EcommerceApp')
 .controller('HomeCtrl', ["$scope", function($scope) {
-  $scope.myInterval = 5000;
-  $scope.noWrapSlides = false;
   $scope.active = 0;
   var slides = $scope.slides = [];
   var currIndex = 0;
