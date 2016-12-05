@@ -38,7 +38,6 @@ body {
 }
 
 a {
-	text-decoration: none;
 	color: black;
 }
 
@@ -55,28 +54,18 @@ a:hover {
 }
 
 .rgt-bottom {
-	display: inline-flex;
     width: 100%;
     justify-content: space-between;
+    padding: 1px;
+    margin-bottom: 10px;
 }
 
-#loginContainer a span {
-    display: block;
+.rgt-bottom a {
     padding: 2px 14px;
     font-weight: 300;
 }
 
-#loginContainer a span:hover {
-    border: 1px solid #555;
-}
-
-.reg a {
-    display: block;
-    padding: 2px 14px;
-    font-weight: 300;
-}
-
-.reg a:hover {
+.rgt-bottom a:hover {
     border: 1px solid #555;
 }
 
@@ -112,7 +101,7 @@ a:hover {
 }
 
 .navbar-nav li{
-	width: 100%;
+	width: 20%;
 }
 
 .navbar-nav li{
