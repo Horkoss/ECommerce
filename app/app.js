@@ -5,18 +5,21 @@ angular.module('EcommerceApp', [
   'ngRoute',
   'ngAnimate',
   'ui.bootstrap'
-  ]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
+  ])
+.controller('MenuCtrl', ["$scope", function($scope) {
+  $scope.isCollapsed = true;
+}])
+.config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
 
   $routeProvider.when('/', {
         templateUrl: 'views/home.html',
         controller: 'HomeCtrl',
         controllerAs: 'home'
       })
-/*  .when('/register', {
+  .when('/register', {
         templateUrl: 'views/register.html',
         controller: 'RegisterCtrl',
         controllerAs: 'register'
-      })*/
+      })
   .otherwise({redirectTo: '/'});
 }]);

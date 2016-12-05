@@ -84,6 +84,12 @@ a:hover {
 
 .search input[type="submit"] {
 	float: right;
+	background: none;
+	background: url('images/search.png') no-repeat 0px 1px;
+	position: absolute;
+	right: 1%;
+	width: 30px;
+	margin-top: 3px;
 }
 
 .navbar-collapse, a {
@@ -91,29 +97,46 @@ a:hover {
 	padding-right: 0px;
 }
 
-.navbar-inverse .navbar-nav > li > a {
+.navbar-collapse.in {
+    overflow-y: hidden;
+}
+
+.navbar-inverse .navbar-nav > li > a, .navbar-header a {
 	color: white;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size: 13px;
 }
 
+.navbar-header a {
+	float: left;
+	padding: 10px 15px;
+	width: 100%;
+	text-align: center;
+}
+
+.navbar-header {
+	width: 20%;
+}
+
 .navbar-nav {
-	display: inline-flex;
-	justify-content: space-between;
+	float: none;
+	display: inline;
 	width: 100%;
 }
 
 .navbar-nav li{
 	width: 20%;
-}
-
-.navbar-nav li{
 	text-align: center;
 }
 
-nav li:hover {
+nav li:hover, .navbar-header:hover {
 	background: #080808;
+}
+
+.navbar-toggle {
+	position: absolute;
+	right: 2%;
 }
 
 .top-product {
@@ -233,6 +256,29 @@ nav li:hover {
 	    padding: 6px 16px;
 	    font-size: 0.75em;
 	    font-weight: 300;
+	}
+
+	.navbar-header {
+		width: 100%;
+	}
+
+	.navbar-header:hover {
+		background: none;
+	}
+
+	.navbar-header a {
+		padding: 15px;
+	}
+	
+	.navbar-nav {
+		display: block;
+		justify-content: normal;
+		width: 100%;
+		margin: 0px;
+	}
+
+	.navbar-nav li {
+		width: 100%;
 	}
 }
 
