@@ -2,8 +2,10 @@
 
 // Declare app level module which depends on views, and components
 angular.module('EcommerceApp', [
-  'ngRoute'
-    ]).
+  'ngRoute',
+  'ngAnimate',
+  'ui.bootstrap'
+  ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
 
   $routeProvider.when('/', {
