@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="app.css">
-
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body ng-app="EcommerceApp">
@@ -23,15 +23,16 @@
   <div class="container">
     <div class="head-t">
       <!-- start header_right -->
-      <div class="header-right col-xs-10 col-md-4">
+      <div class="header-right col-xs-11 col-md-4">
         <div class="rgt-bottom">
           <a class="pull-right" ng-href="#/register">Register</a>
           <a class="pull-right" href="#/">Login</a>
+          <a class="pull-right" href="#/"><i class="fa fa-shopping-cart cart_class" aria-hidden="true"></i>My cart</a>
           <div class="clearfix"> </div>
         </div>
         <div class="search">
             <form>
-              <input type="text" value="" placeholder="Search">
+              <input type="text" value="" placeholder="Search" style="width: 90%">
               <input type="submit" value="">
           </form>
         </div>
@@ -52,10 +53,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse" uib-collapse="isCollapsed">
           <ul class="nav navbar-nav">
-            <li><a href="#/">MEN</a></li>
-            <li><a href="#/">WOMEN</a></li>
-            <li><a href="#/">BOYS</a></li>
-            <li><a href="#/">GIRLS</a></li>
+            <li><a href="#/products/men">MEN</a></li>
+            <li><a href="#/products/women">WOMEN</a></li>
+            <li><a href="#/products/boys">BOYS</a></li>
+            <li><a href="#/products/girls">GIRLS</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </nav>
@@ -67,28 +68,20 @@
 <!-- FOOTER -->
 <div class="footer">
   <div class="container">
-    <div class="col-md-3 col-sm-6">
-      <h4>CUSTOMER CARE</h4>
-      <li><a href="#/">Help Center</a></li>
-      <li><a href="#/">FAQ</a></li>
-      <li><a href="#/">How To Buy</a></li>
-      <li><a href="#/">Delivery</a></li>
+    <div class="col-md-4 col-sm-6">
+      <h4>BUY</h4>
+      <li><a href="#/products/men">Men</a></li>
+      <li><a href="#/products/women">Women</a></li>
+      <li><a href="#/products/boys">Boys</a></li>
+      <li><a href="#/products/girls">Girls</a></li>
     </div>
-    <div class="col-md-3 col-sm-6">
-      <h4>ABOUT US</h4>
-      <li><a href="#/">Our Stories</a></li>
-      <li><a href="#/">Press</a></li>
-      <li><a href="#/">Career</a></li>
-      <li><a href="#/">Contact</a></li>
-    </div>
-    <div class="col-md-3 col-sm-6">
+    <div class="col-md-4 col-sm-6">
       <h4>MY ACCOUNT</h4>
       <li><a href="#/">Register</a></li>
-      <li><a href="#/">My Cart</a></li>
-      <li><a href="#/">Order History</a></li>
-      <li><a href="#/">Payment</a></li>
+      <li><a href="#/">Login</a></li>
+      <li><a href="#/">My cart</a></li>
     </div>
-    <div class="col-md-3 col-sm-6">
+    <div class="col-md-4 col-sm-6">
       <div class="our-left">
         <h4>OUR STORES</h4>
       </div>
@@ -111,6 +104,8 @@
   <script src="app.js"></script>
   <script src="js/home.js"></script>
   <script src="js/register.js"></script>
+  <script src="js/product_list.js"></script>
+  <script src="js/product_details.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>

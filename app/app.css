@@ -54,6 +54,10 @@ a:hover {
 	padding: 0px;
 }
 
+.cart_class {
+	margin-right: 5px;
+}
+
 .rgt-bottom {
     width: 100%;
     justify-content: space-between;
@@ -106,6 +110,7 @@ a:hover {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size: 13px;
+	background: #333;
 }
 
 .navbar-header a {
@@ -130,13 +135,18 @@ a:hover {
 	text-align: center;
 }
 
-nav li:hover, .navbar-header:hover {
-	background: #080808;
+nav li:hover, .navbar-header:hover, .navbar-header a:hover, .navbar-toggle:hover {
+	background: #080808 !important;
 }
 
 .navbar-toggle {
 	position: absolute;
 	right: 2%;
+	border-color: gray !important;
+}
+
+.content_view {
+	padding: 2em 0;
 }
 
 .top-product {
@@ -186,6 +196,170 @@ nav li:hover, .navbar-header:hover {
 .look-btn a:hover{
 	color: black;
   	background: #f9f9f9;
+}
+
+.registration {
+	padding: 3% 1%;
+}
+
+.registration h2 {
+	font-size: 1.5em;
+	margin-top: 0;
+}
+
+.registration_left {
+	padding: 2% 2%;
+}
+
+.registration_form {
+	padding-top: 10px;
+}
+
+.registration_form input{
+	padding: 10px;
+	width: 100%;
+	border: 1px solid #D8D8D8;
+	font: initial;
+}
+
+#register-submit {
+	padding: 10px;
+	width: 100%;
+	border: 1px solid #555;
+	background: none;
+}
+
+#register-submit:hover {
+	border: 1px solid #555;
+	background: black;
+	color: white;
+}
+
+.forget {
+	margin-top: 10px;
+}
+
+.product-title {
+	margin-right: 20px;
+	margin-left: 20px;
+	font-family: 'Playfair Display', serif;
+}
+
+.product-category {
+	margin-bottom: 30px; 
+	text-transform: capitalize;
+	font-size: 1.5em;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.product_number {
+	font-size: 0.8em;
+	text-align: right;
+	margin-left: 15px;
+}
+
+.item_add {
+	width: 100%;
+}
+
+.item_price {
+	width: 100%;
+}
+
+.item_add a {
+	border-top: 1px solid #9d9d9d;
+	width: 100%;
+    padding: 8px 14px;
+    display: inline-block;
+}
+
+.item_add a:hover {
+	background: #333;
+	color: white;
+}
+
+.content_box {
+	border: 1px solid #9d9d9d;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.img_details{
+	min-height: 400px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.details_description {
+	background: #333;
+	padding: 10px 20px;
+	color: white;
+}
+
+.description {
+	margin: 20px;
+}
+
+.home_section {
+	border-bottom: 1px solid #9d9d9d;
+	padding-bottom: 30px;
+}
+
+.home_section:last-of-type {
+	padding-bottom: 30px;
+	border: none;
+}
+
+.home_category {
+	font-family: 'Playfair Display', serif;
+	text-transform: capitalize;
+}
+
+.home_category span{
+	margin-left: 10px;
+	font-size: 0.75em;
+	text-transform: none;
+}
+
+.home_category span:hover{
+	color: grey;
+}
+
+.home_title_box {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.home_product {
+	text-align: center;
+}
+
+.home_add {
+	border: 1px solid #9d9d9d;
+	text-align: center;
+}
+
+.details_price {
+	min-height: 400px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.details_add_cart h4 {
+	margin-top: 20px;
+}
+
+.details_add_cart h3 {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.details_add_cart {
+	border: 1px solid #9d9d9d;
+	text-align: center;
+	min-width: 150px;
 }
 
 .footer {

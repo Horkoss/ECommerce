@@ -3,3 +3,10 @@ logs/*
 tmp
 .DS_Store
 .idea
+node_modules/bower/node_modules/update-notifier/node_modules/latest-version/node_modules/package-json/node_modules/got/node_modules/duplexify/node_modules/end-of-stream/node_modules/once/node_modules/wrappy/package.json
+node_modules/bower/node_modules/update-notifier/node_modules/latest-version/node_modules/package-json/node_modules/got/node_modules/duplexify/node_modules/end-of-stream/node_modules/once/node_modules/wrappy/test/basic.js
+node_modules/bower/node_modules/update-notifier/node_modules/latest-version/node_modules/package-json/node_modules/got/node_modules/read-all-stream/node_modules/readable-stream/node_modules/process-nextick-args/.travis.yml
+node_modules/bower/node_modules/update-notifier/node_modules/latest-version/node_modules/package-json/node_modules/got/node_modules/read-all-stream/node_modules/readable-stream/node_modules/process-nextick-args/index.js
+node_modules/bower/node_modules/update-notifier/node_modules/latest-version/node_modules/package-json/node_modules/got/node_modules/read-all-stream/node_modules/readable-stream/node_modules/process-nextick-args/license.md
+node_modules/bower/node_modules/update-notifier/node_modules/latest-version/node_modules/package-json/node_modules/got/node_modules/read-all-stream/node_modules/readable-stream/node_modules/process-nextick-args/package.json
+node_modules/bower/node_modules/update-notifier/node_modules/latest-version/node_modules/package-json/node_modules/got/node_modules/read-all-stream/node_modules/readable-stream/node_modules/process-nextick-args/readme.md

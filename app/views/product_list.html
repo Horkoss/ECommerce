@@ -1,0 +1,19 @@
+	<div ng-controller="ProductListCtrl" class="col-md-12 content_view">
+		<div class="product-title">
+			<p class="product-category">{{category}}<span class="product_number">{{product_number}}</span></p> 
+		</div>
+		<!-- grids_of_4 -->
+      <div class="col-md-12">
+        <div ng-repeat="product in productsList track by $index" class="col-md-3 col-xs-6">
+          	<div class="home_product">
+	            <a href="#/product/{{ product.id }}">
+	                 <img src="{{ product.image }}" class="img-responsive" alt=""/>
+	            </a>
+	           	<h4>Duis autem</h4>           
+	            <div class="item_add"><span class="item_price"><h5>$99.00</h5></span></div>
+	            <div class="item_add"><span class="item_price"><a class="home_add" href="#/products/{{category}}">Add to cart</a></span></div>
+	        </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+	</div>
